@@ -9,6 +9,7 @@
     "bootstrap": "^5.1.3",
     "dotenv": "^8.2.0",
     "firebase": "^8.10.0",
+    "heroku": "^7.59.0",
     "jwks-rsa": "^1.9.0",
     "node-pre-gyp": "^0.17.0",
     "react": "^17.0.1",
@@ -22,7 +23,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "postinstall": "npm rebuild web-vitals && npm install web-vitals"
   },
   "eslintConfig": {
     "extends": [
@@ -43,6 +45,6 @@
     ]
   },
   "devDependencies": {
-    "web-vitals": "^2.1.2"
+    "web-vitals": "2.1.2"
   }
 }
